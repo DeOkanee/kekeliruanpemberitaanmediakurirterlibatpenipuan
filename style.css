@@ -78,6 +78,20 @@ footer a {
   text-decoration: none;
   color: #009fbb;
 }
+@media screen and (max-width: 1067px){
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-section{
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+  .berita-section{
+    width: 100%;
+  }
+}
 @media screen and (max-width: 567px) {
   .container {
     flex-direction: column; /* Mengubah tata letak menjadi satu kolom */

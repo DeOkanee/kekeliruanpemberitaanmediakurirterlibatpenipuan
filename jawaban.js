@@ -36,7 +36,7 @@ function submitQuiz() {
     for (const question in answers) {
         const isCorrect = answers[question] === correctAnswers[question];
         resultHTML += `<p>Soal ${question}: Jawaban Anda - ${answers[question]}, Jawaban Benar - ${correctAnswers[question]}</p>`;
-        resultHTML += `<p>${isCorrect ? 'Benar!' : 'Salah.'} ${explanations[question]}</p>`;
+        resultHTML += `<p>${isCorrect ? 'Benar ✅:' : 'Salah ❌, Penjelasan ➡'} ${explanations[question]}</p>`;
         resultHTML += '<hr>';
         if (isCorrect) {
             score++;

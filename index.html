@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="soal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>Berita dan Quis</title>
+    <link rel="shortcut icon" href="/image/icon.png" />
+
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="textatas">
+        <h2>KeKeliruan Pemberitaan, Kurir Dituduh Terlibat Penipuan Padahal Hanya Pengantar Paket</h2>
+      </div>
+      <div class="image-section">
+        <img src="image/paket 4.jpeg" alt="Berita" /><img src="image/paket.jpeg" alt="berita"></img>
+        <img src="image/paket 2.jpeg" alt="Berita" /><img src="image/paket 3.jpeg" alt="berita"></img>
+      </div>
+
+      <div class="berita-section">
+        <h1>KeKeliruan Pemberitaan, Kurir Dituduh Terlibat Penipuan Padahal Hanya Pengantar Paket</h1>
+        <p>
+          Sebuah masalah muncul ketika seorang pengantar yang baik-baik saja dituduh terlibat dalam kasus penipuan hanya karena dia mengantarkan barang. Kejadian ini membuat kita bertanya-tanya tentang kebenaran dan sikap baik dalam berita.
+          <br />
+          Seorang pengantar yang bekerja dengan perusahaan pengiriman terkenal disebut-sebut secara salah sebagai orang yang melakukan penipuan yang serius. Pada dasarnya, tugasnya hanya membawa paket kepada orang yang tidak tahu apa-apa tentang isinya.
+          <br />
+          Hal ini terjadi ketika seseorang dituduh melakukan penipuan dengan menggunakan jasa pengiriman untuk menyampaikan barang-barang yang tidak boleh. Tapi, dalam berita yang salah, pengantar yang tidak bersalah disebut sebagai "orang utama" tanpa memahami bahwa dia hanya melakukan pekerjaannya sesuai perintah.
+          <br />
+          Berita yang terlalu cepat memberikan judul yang dramatis membuat orang bingung, dan membuat pengantar yang tidak bersalah ini dianggap buruk tanpa alasan yang adil.
+          <br />
+          Wawancara dengan orang yang berwenang dan perusahaan pengiriman menunjukkan bahwa pengantar itu bahkan tidak tahu apa yang ada di dalam paket yang dia bawa, dan dia hanya melakukan apa yang diinstruksikan. Berita yang salah ini tidak hanya merugikan nama baik orang itu, tapi juga membuat orang tidak percaya pada perusahaan pengiriman secara keseluruhan.
+          <br />
+          Kejadian ini mengingatkan kita bahwa media harus berhati-hati dan pastikan informasinya benar sebelum memberitahukannya kepada semua orang. Berita yang tidak hati-hati bisa merugikan orang dan membuat masyarakat tidak percaya pada media sebagai sumber informasi.
+        </p>
+        <button onclick="toggleSound()" id="soundButton">
+          <i id="volumeIcon" class="bi bi-volume-up"></i>
+        </button>
+        <button id="showberitaButton" onclick="showQuiz()">Soal Quis</button>
+      </div>
+    </div>
+    <!--muncul soal-->
+    <div id="quiz-container" style="display: none;">
+      <!-- Isi soal-soal di sini -->
+      <!--soal1-->
+    <div id="quiz-container" class="quis">
+      <h1>Quis Soal</h1>
+      <div class="question" id="question1">
+          <p>Soal 1: Siapa yang Dituduh Terlibat dalam Penipuan?</p>
+          <div class="options">
+              <div class="option">
+                  <input type="radio" name="q1" value="A"> A. Dokter
+              </div>
+              <div class="option">
+                  <input type="radio" name="q1" value="B"> B. Polisi
+              </div>
+              <div class="option">
+                  <input type="radio" name="q1" value="C"> C. Kurir
+              </div>
+              <div class="option">
+                  <input type="radio" name="q1" value="D"> D. Guru
+              </div>
+          </div>
+      </div>
+      <!--SOALKE2-->
+      <div class="question" id="question2">
+        <p>Soal 2: Apa Peran Kurir dalam Kisah Ini?</p>
+        <div class="options">
+            <div class="option">
+                <input type="radio" name="q2" value="A"> A. Menjual Barang
+            </div>
+            <div class="option">
+                <input type="radio" name="q2" value="B"> B. Mengantar Paket
+            </div>
+            <div class="option">
+                <input type="radio" name="q2" value="C"> C. Mengajar
+            </div>
+            <div class="option">
+                <input type="radio" name="q2" value="D"> D. Memasak
+            </div>
+        </div>
+    </div>
+    <!-- Soal 3 -->
+    <div class="question" id="question3">
+      <p>Soal 3: Apa yang Membuat Kurir Terkejut dalam Kisah Ini?</p>
+      <div class="options">
+          <div class="option">
+              <input type="radio" name="q3" value="A"> A. Paketnya Hilang
+          </div>
+          <div class="option">
+              <input type="radio" name="q3" value="B"> B. Isi Paket Menakutkan
+          </div>
+          <div class="option">
+              <input type="radio" name="q3" value="C"> C. Dia Dituduh Terlibat Penipuan
+          </div>
+          <div class="option">
+              <input type="radio" name="q3" value="D"> D. Dia Mendapat Hadiah
+          </div>
+      </div>
+    </div>
+
+    <!-- Soal 4 -->
+    <div class="question" id="question4">
+      <p>Soal 4: Mengapa Pemberitaan yang Keliru Merugikan Kurir?</p>
+      <div class="options">
+          <div class="option">
+              <input type="radio" name="q4" value="A"> A. Kurir Mendapat Hadiah
+          </div>
+          <div class="option">
+              <input type="radio" name="q4" value="B"> B. Kurir Kelelahan
+          </div>
+          <div class="option">
+              <input type="radio" name="q4" value="C"> C. Kurir Kecele
+          </div>
+          <div class="option">
+              <input type="radio" name="q4" value="D"> D. Kurir Terkena Dampak Buruk pada Reputasinya
+          </div>
+      </div>
+    </div>
+
+    <!-- Soal 5 -->
+    <div class="question" id="question5">
+      <p>Soal 5: Apa yang Harus Dilakukan Media agar Tidak Keliru dalam Memberitakan?</p>
+      <div class="options">
+          <div class="option">
+              <input type="radio" name="q5" value="A"> A. Menulis Berita Tanpa Penelitian
+          </div>
+          <div class="option">
+              <input type="radio" name="q5" value="B"> B. Mengejar Kecepatan Tanpa Memeriksa Fakta
+          </div>
+          <div class="option">
+              <input type="radio" name="q5" value="C"> C. Memastikan Informasi yang Disajikan Akurat Sebelum Disebarkan
+          </div>
+          <div class="option">
+              <input type="radio" name="q5" value="D"> D. Menambahkan Detail yang Tidak Benar untuk Menarik Perhatian
+          </div>
+      </div>
+    </div>
+
+    <!-- Soal 6 -->
+    <div class="question" id="question6">
+      <p>Soal 6: Mengapa Kurir Tidak Mengetahui Isi Paket yang Dikirimnya?</p>
+      <div class="options">
+          <div class="option">
+              <input type="radio" name="q6" value="A"> A. Karena Dia Lupa
+          </div>
+          <div class="option">
+              <input type="radio" name="q6" value="B"> B. Karena Dia Tidak Peduli
+          </div>
+          <div class="option">
+              <input type="radio" name="q6" value="C"> C. Karena Itu Adalah Bagian dari Tugasnya
+          </div>
+          <div class="option">
+              <input type="radio" name="q6" value="D"> D. Karena Dia Tidak Suka Membuka Paket Orang Lain
+          </div>
+      </div>
+    </div>
+
+      <button id="submit-btn" onclick="submitQuiz()">Lihat Hasil</button>
+  
+      <div id="result-container">
+          <h2>Hasilnya:</h2>
+          <div id="result"></div>
+      </div>
+  </div>
+    
+    
+    <script src="/jawaban.js"></script>
+    <!--soal quis muncul-->
+    <script>
+      function showQuiz() {
+          // Sembunyikan tombol "Soal Quis"
+          document.getElementById('showberitaButton').style.display = 'none';
+  
+          // Tampilkan kontainer soal
+          document.getElementById('quiz-container').style.display = 'block';
+      }
+  </script>
+    <!--AUDIO-->
+    <script>
+      var audio = new Audio('sound/soundberita.mp3'); // Ganti dengan path sesuai lokasi file MP3 Anda
+      var isPlaying = false;
+
+      function toggleSound() {
+          var volumeIcon = document.getElementById('volumeIcon');
+
+          if (!isPlaying) {
+              audio.play();
+              volumeIcon.classList.remove('bi-volume-up');
+              volumeIcon.classList.add('bi-volume-up-fill');
+          } else {
+              audio.pause();
+              audio.currentTime = 0; // Mengatur waktu audio kembali ke awal untuk pemutaran berikutnya
+              volumeIcon.classList.remove('bi-volume-up-fill');
+              volumeIcon.classList.add('bi-volume-mute');
+          }
+
+          isPlaying = !isPlaying;
+      }
+  </script>
+  <footer>
+    <p>Copyright © 2022 <a href="https://s.id/MyWebDeoka">De Oka</a></p>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.image-section {
+  width: 50%;
+}
+.container .textatas h2 {
+  display: none;
+}
+
+.image-section img {
+  width: 45%;
+  margin: 1%;
+  border-radius: 10px;
+}
+
+.berita-section {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+}
+.berita-section h1 {
+    display: contents;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.berita-section p {
+  font-size: 17px;
+}
+.berita-section p br {
+  margin-bottom: 10px; /* Atur spasi bawah di antara baris */
+  display: block; /* Pastikan elemen br dirender sebagai blok */
+  content: ""; /* Menambahkan konten kosong untuk memastikan render di semua browser */
+}
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button {
+  position: relative;
+}
+
+#showberitaButton {
+  position: absolute;
+  right: 5%;
+}
+footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+footer p {
+  font-size: 16px;
+}
+footer a {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+@media screen and (max-width: 567px) {
+  .container {
+    flex-direction: column; /* Mengubah tata letak menjadi satu kolom */
+    align-items: center; /* Pusatkan item pada sumbu lintang (axis) */
+    padding: 20px; /* Sesuaikan padding sesuai kebutuhan pada layar kecil */
+  }
+  .image-section {
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+  .container .textatas h2 {
+    display: contents;
+    font-size: 22px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center; /* Tambahkan properti ini */
+  }
+
+  .berita-section {
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+  }
+  .berita-section h1 {
+   display: none;
+  }
+  .berita-section p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #showberitaButton {
+    position: absolute;
+    right: 10%;
+  }
+}

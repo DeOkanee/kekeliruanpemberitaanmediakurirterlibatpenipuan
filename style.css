@@ -113,10 +113,6 @@ footer a {
     right: 10%;
   }
   footer {
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
+   max-width: 100%;
   }
 }

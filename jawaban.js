@@ -44,6 +44,6 @@ function submitQuiz() {
     }
 
     // Display result
-    document.getElementById('result').innerHTML = `<p>Skor Anda: ${score} / 6</p>` + resultHTML;
+    document.getElementById('result').innerHTML = `<p>Benar: ${score} / 6</p>` + resultHTML;
     document.getElementById('result-container').style.display = 'block';
 }

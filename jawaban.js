@@ -7,6 +7,10 @@ function submitQuiz() {
         Q4: document.querySelector('input[name="q4"]:checked').value,
         Q5: document.querySelector('input[name="q5"]:checked').value,
         Q6: document.querySelector('input[name="q6"]:checked').value,
+        Q7: document.querySelector('input[name="q7"]:checked').value,
+        Q8: document.querySelector('input[name="q8"]:checked').value,
+        Q9: document.querySelector('input[name="q9"]:checked').value,
+        Q10: document.querySelector('input[name="q10"]:checked').value,
     };
 
     // Check answers
@@ -17,6 +21,10 @@ function submitQuiz() {
         Q4: 'D',
         Q5: 'C',
         Q6: 'C',
+        Q7: 'B',
+        Q8: 'C',
+        Q9: 'C',
+        Q10: 'D',
     };
 
     // Explanations
@@ -27,23 +35,27 @@ function submitQuiz() {
         Q4: 'Pemberitaan yang keliru menciptakan dampak buruk pada reputasi kurir.',
         Q5: 'Media harus memastikan bahwa informasi yang disajikan benar sebelum menyebarkannya agar tidak menimbulkan kekeliruan.',
         Q6: 'Kurir tidak mengetahui isi paket karena itu adalah bagian dari tugasnya untuk menjaga privasi dan keamanan paket yang dikirim.',
+        Q7: 'Kurir dituduh keterlibatan dalam penipuan dalam berita ini.',
+        Q8: 'Pemberitaan yang terlalu cepat dengan judul dramatis dapat membuat orang bingung dan menciptakan stigmatisasi yang tidak adil terhadap individu.',
+        Q9: 'Wawancara dengan pihak berwenang dan perusahaan pengiriman mengungkapkan bahwa kurir tidak mengetahui isi paket yang dia antar.',
+        Q10: 'Media harus berhati-hati dan memastikan informasi yang disajikan akurat agar tidak merugikan individu dan industri terkait.',
     };
 
     // Calculate score and prepare result HTML
-    let score = 0;
+    let totalScore = 0;
     let resultHTML = '';
 
     for (const question in answers) {
         const isCorrect = answers[question] === correctAnswers[question];
+        const score = isCorrect ? 10 : 0;
+        totalScore += score;
         resultHTML += `<p>Soal ${question}: Jawaban Anda - ${answers[question]}, Jawaban Benar - ${correctAnswers[question]}</p>`;
         resultHTML += `<p>${isCorrect ? 'Benar ✅:' : 'Salah ❌, Penjelasan ➡'} ${explanations[question]}</p>`;
+        resultHTML += `<p>Nilai Soal: ${score}</p>`;
         resultHTML += '<hr>';
-        if (isCorrect) {
-            score++;
-        }
     }
 
     // Display result
-    document.getElementById('result').innerHTML = `<p>Benar: ${score} dari 6 soal</p>` + resultHTML;
+    document.getElementById('result').innerHTML = `<p>Total Nilai: ${totalScore} dari 100</p>` + resultHTML;
     document.getElementById('result-container').style.display = 'block';
 }

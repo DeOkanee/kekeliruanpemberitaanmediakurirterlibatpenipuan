@@ -28,10 +28,13 @@
 .quis h1 {
   text-align: center;
   font-size: 25px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   animation: blink 4s infinite; /* 4s adalah durasi animasi, infinite membuat animasi berulang terus-menerus */
 }
-
+.quis h4{
+  display: inline-block;
+  font-size: 20px;
+}
 .question {
   margin-bottom: 20px;
   padding-left: 40px;
@@ -65,7 +68,11 @@
   .quis h1 {
     font-size: 25px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  .quis h4{
+    font-size: 17px;
+    margin-bottom: 10px;
   }
   .quis {
     padding-left: 18px;
